@@ -1,0 +1,130 @@
+<style>
+  #main {
+  position: relative;
+  background: #F7F0FE;
+  font-family: monospace;
+  border-radius: 10px;
+}
+
+.description-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#title {
+  font-size: 54px;
+}
+
+.description-box p {
+  font-size: 18px;
+}
+
+#img-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 20px;
+  margin: 20px;
+}
+
+#image {
+  max-width: 100%;
+  filter: brightness(1.26);
+}
+
+#img-caption {
+  font-size: 16px;
+}
+
+#tribute-info {
+  width: 700px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#tribute-info > strong {
+  font-size: 20px;
+  padding: 40px;
+}
+
+#tribute-info ul {
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+#tribute-info li {
+  padding: 8px;
+}
+
+#about-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 20px;
+  
+  padding: 50px;
+}
+
+#about-link a {
+  position: relative;
+  left: 10px;
+}
+
+</style>
+
+<div id="main">
+   <div class="description-box">
+    <header id="title">Ada Lovelace</header>
+    <p>
+      The woman who was the first computer programer
+    </p>
+   </div>
+
+   <div id="img-div">
+     <img src="https://www.ctrlplay.com.br/wp-content/uploads/2019/08/Ada-WomenThatDid-1200x675.jpg" alt="Ada Lovelace" id="image">
+     <p id="img-caption">Augusta Ada King, Countess of Lovelace, was an English mathematician and writer</p>
+   </div>
+
+   <div id="tribute-info">
+     <strong>
+       Here's a time line of Ada Lovelace life:
+     </strong>
+     
+     <ul>
+       <li>
+         <strong>1815 - </strong>
+         Born in London, England
+       </li>
+       <li>
+         <strong>1832 - </strong>
+         Her mathematical abilities began to emerge, and her interest in mathematics dominated the majority of her adult life. In a letter to Lady Byron, De Morgan suggested that her daughter's skill in mathematics could lead her to become "an original mathematical investigator, perhaps of first-rate eminence" 
+       </li>
+       <li>
+         <strong>1833 - </strong>
+         Lovelace became close friends with her tutor Mary Somerville, who introduced her to Charles Babbage. Later that month, Babbage invited Lovelace to see the prototype for his difference engine. She became fascinated with the machine and used her relationship with Somerville to visit Babbage as often as she could. Babbage was impressed by Lovelace's intellect and analytic skills. 
+       </li>
+       <li>
+         <strong>1835 - </strong>
+         She married William, 8th Baron King, becoming Lady King and had 3 children: Byron (born 1836), Anne Isabella (called Annabella, born 1837) and Ralph Gordon (born 1839)
+       </li>
+       <li>
+         <strong>1842 - 1843 - </strong>
+         Lovelace translated the Italian mathematician Luigi Menabrea's article on Babbage's newest proposed machine, the Analytical Engine. With the article, she appended a set of notes. The notes are around three times longer than the article itself. Ada Lovelace's notes were labelled alphabetically from A to G. In note G, she describes an algorithm for the Analytical Engine to compute Bernoulli numbers. It is considered to be the first published algorithm ever
+       </li>
+       <li>
+         <strong>1852 - </strong>
+         Dies at the age of 36 
+       </li>
+     </ul>
+   </div>
+  
+   <strong id="about-link"> If you have time, you should read more about this incredible human being on her <a href="https://en.wikipedia.org/wiki/Ada_Lovelace" id="tribute-link" target="_blank">Wikipedia entry</a>.
+   </strong>
+</div>
