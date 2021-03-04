@@ -15,4 +15,8 @@ All challenges in this course uses only HTML5 and CSS3.
 
 ### Build a Tribute Page
 
-The first challenge is to build a Tribute Page. The person I choose to talk about was Ada Lovelace.
+The first challenge is to build a Tribute Page. The person I choose to talk about was Ada Lovelace. The page have a photo of Ada and a succinct timeline of Adas life. At the bottom, there is a link to her Wikipedia's page if someone wishes to learn more about her.
+
+To make this page, I used display Flex to centralize the content.
+
+![Ada Lovelace Tribute Page Overview](/photos/ada-page-tribute.png)
