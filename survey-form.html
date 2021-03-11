@@ -1,0 +1,332 @@
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato', Sans-serif;
+    
+    background-image: linear-gradient(rgba(118, 118, 190, 0.85), rgba(118, 118, 190, 0.85)), url(https://images.unsplash.com/photo-1531482615713-2afd69097998?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+  #description {
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  #survey-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    width: 700px;
+    height: 1350px;
+    
+    background: rgba(40, 40, 70, 0.85);
+    padding: 50px;
+    margin: 50px;
+    border-radius: 5px;
+    
+    font-size: 20px;
+  }
+
+  #name-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    height: 80px;
+  }
+
+  #name {
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  #email-label{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    height: 80px;
+  }
+
+  #email{
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  #number-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    height: 80px;
+  }
+
+  #number {
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  #dropdown-role-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    height: 80px;
+  }
+
+  #dropdown {
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    padding: 10px;
+    font-size: 16px;
+    color: #757575;
+  }
+
+  #radio-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    color: #fff;
+    height: 130px;
+
+  }
+
+  #radio-container p {
+    margin: 0;
+    padding-bottom: 15px;
+  }
+
+  #radio-container label {
+    padding-bottom: 5px;
+  }
+
+  #radio-container input {
+    margin: 0;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+
+  #dropdown-features-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    height: 80px;
+  }
+
+  #dropdown-features {
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    padding: 10px;
+    font-size: 16px;
+    color: #757575;
+  }
+
+  #checkbox-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+  }
+
+  #checkbox-container p {
+    margin: 0;
+    padding-bottom: 15px;
+  }
+
+  #checkbox-container label {
+    padding-bottom: 5px;
+  }
+
+  #checkbox-container input {
+    margin: 0;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+
+  #textarea-label {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    height: 250px;
+    width: 100%;
+  }
+
+  #textarea-label p {
+    margin: 0;
+    padding-bottom: 15px;
+  }
+
+  #textarea-label textarea {
+    min-height: 100px;
+    max-width: 100%;
+    resize: vertical;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  #submit {
+    height: 50px;
+    font-size: 19px;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    background: #37AF65;
+    cursor: pointer;
+  }
+</style>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+<div id="header">
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description">
+    Thank you for taking the time to help us improve the platform
+  </p>
+</div>
+
+<form id="survey-form">
+  
+  <label id="name-label" for="name">
+    Name
+    <input id="name" type="text" placeholder="Enter your name" required>
+  </label>
+  
+  <label id="email-label" for="email">
+    Email
+    <input id="email" type="email" placeholder="Enter your Email" required>
+  </label>
+  
+  <label id="number-label" for="number">
+    Age (optional)
+    <input id="number" type="number" placeholder="Number" min="1" max="100">
+  </label> 
+  
+  <label id="dropdown-role-label" for="dropdown">
+    Which option best describes your current role?
+    <select id="dropdown">
+      <option value="" selected disabled>Select current role</option>
+      <option value="Student">Student</option>
+      <option value="Full Time Job">Full Time Job</option>
+      <option value="Full Time Learner">Full Time Learner</option>
+      <option value="Prefer not to say">Prefer not to say</option>
+      <option value="Other">Other</option>
+    </select>
+  </label>
+  
+  <div id="radio-container">
+    <p>
+      Would you recommend freeCodeCamp to a friend?
+    </p>
+    <label>
+      <input type="radio" name="recommend-site" value="definitely"checked>
+      Definitely
+    </label>
+    <label>
+      <input type="radio" name="recommend-site" value="maybe">
+      Maybe
+    </label>
+    <label>
+      <input type="radio" name="recommend-site" value="not-sure">
+      Not sure
+    </label>
+  </div>
+
+  <label id="dropdown-features-label" for="dropdown-features">
+    What is your favorite feature of freeCodeCamp?
+    <select id="dropdown-features">
+      <option value="" selected disabled>Select an option</option>
+      <option value="Challenges">Challenges</option>
+      <option value="Projects">Projects</option>
+      <option value="Community">Community</option>
+      <option value="Open Source">Open Source</option>
+    </select>
+  </label>
+
+  <div id="checkbox-container">
+    <p>What would you like to see improved? (Check all that apply)</p>
+    <label>
+      <input type="checkbox" value="front-end-projects">
+      Front-End Projects
+    </label>
+    <label>
+      <input type="checkbox" value="back-end-projects">
+      Back-End Projects
+    </label>
+    <label>
+      <input type="checkbox" value="data-visualization">
+      Data Visualization
+    </label>
+    <label>
+      <input type="checkbox" value="challenges">
+      Challenges
+    </label>
+    <label>
+      <input type="checkbox" value="open-source-community">
+      Open Source Community
+    </label>
+    <label>
+      <input type="checkbox" value="gitter-help-rooms">
+      Gitter help rooms
+    </label>
+    <label>
+      <input type="checkbox" value="videos">
+      Videos
+    </label>
+    <label>
+      <input type="checkbox" value="city-meetups">
+      City Meetups
+    </label>
+    <label>
+      <input type="checkbox" value="wiki">
+      Wiki
+    </label>
+    <label>
+      <input type="checkbox" value="forum">
+      Forum
+    </label>
+    <label>
+      <input type="checkbox" value="additional-courses">
+      Additional Courses
+    </label>
+  </div>
+  
+  <label id="textarea-label">
+    <p>Any comments or suggestions?</p>
+    <textarea placeholder="Enter your comment here..."></textarea>
+  </label>
+
+  <button id="submit" type="submit">Submit</button>
+  
+
+</form>
