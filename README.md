@@ -67,6 +67,10 @@ Second we have the projects presentation. I loved the animation they bring in th
 
 ![Personal Portfolio Webpage Overview 2](/photos/portfolio-2.png)
 
-At last we have the contact part.
+At last we have the contact part. I tried to use icons with similar design so the page looks consistent. Here I made different from de example as well, the contacts goes up and not down as on the exampla page. I used transform: translateY() to do the hover effect and this ends all FreeCodeCamp challenges under the course "Responsive Web Design".
 
 ![Personal Portfolio Webpage Overview 3](/photos/portfolio-3.png)
+
+## About the Challenges
+
+I liked a lot doing this challenges. I had to search so many things and learned a lot. I think that the project that I learned the most from was the Survey Form page, there was so much information and learn the HTML semantics to make a good survey form was insane!
