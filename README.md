@@ -20,3 +20,11 @@ The first challenge is to build a Tribute Page. The person I choose to talk abou
 To make this page, I used display Flex to centralize the content.
 
 ![Ada Lovelace Tribute Page Overview](/photos/ada-page-tribute.png)
+
+### Build a Survey Form
+
+This challenge consists in building a Survey Form. I decided to clone the page they give as an example ( https://codepen.io/freeCodeCamp/full/VPaoNP ) to complete this challenge.
+
+I used display Flex to align all elements and content of the page. For the dropdown, I used the element select, I tried to use datalist but it wasn't behaving as I would like to. For the background I searched an image that was pretty an used linear-gradient( ) to make the same job as the filter in CSS.
+
+![Survey Form Page Overview](/photos/survey-form-photo.jpg)
